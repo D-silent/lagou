@@ -85,8 +85,8 @@ class MysqlPipeline:
         self.conn.close()
 
     def process_item(self, item, spider):
-        sql = 'insert into proxy values(%s, %s)'
-        data = (item['proxytype'], item['proxy'])
+        sql = 'insert into proxy values(%s, %s, %s)'
+        data = (item['proxytype'], item['proxy'], 'inactive')
         self.cursor.execute(sql, args=data)
         self.conn.commit()
         return item
