@@ -1,16 +1,27 @@
 import scrapy
 from lagou_job.items import LagouJobItem
+import MySQLdb as mdb
 
 
 class Lagou(scrapy.Spider):
     name = 'lagou'
+    conn = mdb.connect('localhost', 'scrapy', 'scrapy', 'scrapy')
+    cursor = conn.cursor()
+    sql = 'select * from url where status="no"'
+
+    def get_one_url(self):
+        self.cursor.execute(sql)
+        return cursor.fetchone()
 
     def start_requests(self):
-        url_mode = "https://www.lagou.com/jobs/%d.html"
-        for page in range(1, 11):
-            url = url_mode % page
-            print(url)
-            yield scrapy.Request(url=url, callback=self.parse)
+        while True:
+            url = self.get_one_url()
+            if url:
+                url = url[0]
+                print(url)
+                yield scrapy.Request(url=url, callback=self.parse)
+            else:
+                break
 
     def parse(self, response):
         jobid = response.url.split('/')[-1].split('.')[0]
