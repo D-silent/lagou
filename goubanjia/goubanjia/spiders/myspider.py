@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from goubanjia.items import ProxyItem
 
 
 class GoubanjiaspiderSpider(scrapy.Spider):
     name = 'proxy'
     start_urls = [
-            'http://goubanjia.com/free/gngn/index%d.shtml' % page
-                for page in range(1, 203)
+            'http://goubanjia.com/free/index%d.shtml' % page
+                for page in range(1, 600)
             ]
 
     def parse(self, response):
-        print(response.url)
         trs = response.xpath('//tr')
         for tr in trs[1:]:
             tds = tr.xpath('td')
@@ -22,6 +22,6 @@ class GoubanjiaspiderSpider(scrapy.Spider):
                 realport += str("ABCDEFGHIZ".find(c))
             realport = int(realport) >> 3
             proxytype = tds[2].xpath('a/text()').extract_first()
-            proxy = "%s://%s:%d\n" % (proxytype, ip, realport)
+            proxy = "%s:%d" % (ip, realport)
 
-            yield dict(proxy=proxy)
+            yield ProxyItem(proxytype=proxytype, proxy=proxy)
