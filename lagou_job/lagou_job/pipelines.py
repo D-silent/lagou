@@ -59,4 +59,4 @@ class TextPipeline(object):
         return item
 
     def open_spider(self, spider):
-        self.file = open('item.txt', 'w')
+        self.file = open('item.txt', 'a')

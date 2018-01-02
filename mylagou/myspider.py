@@ -6,16 +6,23 @@ import threading
 from lxml import etree
 from random import choice
 from urllib import request
+import MySQLdb as mdb
 
 
 #  创建锁对象
 threadLock = threading.Lock()
 #  代理ip池
-proxies = open('proxy.dat').readlines()
+#  proxies = open('proxy.dat').readlines()
 #  用户代理池
 agents = open('agent.dat').readlines()
 #  创建队列
 q_queue = queue.Queue()
+conn = mdb.connect('localhost', 'scrapy', 'scrapy', 'scrapy')
+cursor = conn.cursor()
+sql = 'select * from proxy where proxytype=%s and status=%s'
+data = ('https', 'active')
+cursor.execute(sql, args=data)
+proxies = cursor.fetchall()
 
 
 def parse(tree):
@@ -41,20 +48,30 @@ def crawl():
     """
     爬虫程序
     """
+    count = 0
+    flag = True
     while not q_queue.empty():
         #  获取一个url
         url = q_queue.get()
         #  设置请求头
         headers = {
                 'User-Agent': choice(agents).strip(),
-                "Connection": "keep-alive",
+                "Connection": "close",#"keep-alive",
                 "Host": "www.lagou.com",
                 'Origin':'https://www.lagou.com',
                 'Referer':'https://www.lagou.com',
                 "Upgrade-Insecure-Requests": "1",
                 }
         #  使用代理ip
-        proxy = {'http': choice(proxies).strip()}
+        if flag:
+            ip = choice(proxies)
+            ip = ip[0] + '://' + ip[1]
+            proxy = {'https': ip}
+            flag = False
+        count += 1
+        if count > 4:
+            count = 0
+            flag = True
 
         try:
             """
@@ -67,6 +84,7 @@ def crawl():
             res = request.urlopen(req)
         except Exception as e:
             print(e)
+            print("urlopen")
             q_queue.put(url)
             continue
 
@@ -81,6 +99,7 @@ def crawl():
                 print(jobname)
             except Exception as e:
                 print(e)
+                print("parse")
                 q_queue.put(url)
                 continue
             #  加锁
@@ -89,6 +108,7 @@ def crawl():
             threadLock.release()
         except Exception as e:
             print(e)
+            print("read")
             q_queue.put(url)
             continue
 

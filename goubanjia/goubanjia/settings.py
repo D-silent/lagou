@@ -15,8 +15,8 @@ DOWNLOADER_MIDDLEWARES = {
 ITEM_PIPELINES = {
     'goubanjia.pipelines.UniquePipeline': 300,
     'goubanjia.pipelines.IntegrityPipeline': 301,
-    'goubanjia.pipelines.TextPipeline': 302,
-    'goubanjia.pipelines.MysqlPipeline': 303,
+    'goubanjia.pipelines.TextPipeline': 303,
+    'goubanjia.pipelines.MysqlPipeline': 302,
 }
 
 DB_USER = 'scrapy'

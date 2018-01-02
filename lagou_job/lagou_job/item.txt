@@ -1,0 +1,336 @@
+jobid: 5
+jobname: 手机测试工程师
+salary: 2k-20k
+address: 上海
+experience: 经验1-3年
+edureq: 本科及以上
+
+jobid: 9
+jobname: IPhone手机开发工程师
+salary: 2k-20k
+address: 上海
+experience: 经验1-3年
+edureq: 本科及以上
+
+jobid: 4
+jobname: Web测试工程师
+salary: 2k-20k
+address: 上海
+experience: 经验3-5年
+edureq: 本科及以上
+
+jobid: 3
+jobname: Web测试工程师
+salary: 2k-20k
+address: 上海
+experience: 经验1-3年
+edureq: 本科及以上
+
+jobid: 15
+jobname: 社区运营经理
+salary: 2k-20k
+address: 上海
+experience: 经验1-3年
+edureq: 大专及以上
+
+jobid: 25
+jobname: BD
+salary: 2k-20k
+address: 上海
+experience: 经验不限
+edureq: 本科及以上
+
+jobid: 27
+jobname: 产品经理
+salary: 2k-20k
+address: 上海
+experience: 经验不限
+edureq: 学历不限
+
+jobid: 28
+jobname: 编辑助理
+salary: 2k-20k
+address: 上海
+experience: 经验不限
+edureq: 学历不限
+
+jobid: 18
+jobname: 视觉设计师
+salary: 2k-20k
+address: 上海
+experience: 经验不限
+edureq: 本科及以上
+
+jobid: 34
+jobname: 技术开发工程师
+salary: 7k-10k
+address: 北京
+experience: 经验不限
+edureq: 学历不限
+
+jobid: 58
+jobname: 初级软件测试工程师
+salary: 2k-20k
+address: 上海
+experience: 经验不限
+edureq: 学历不限
+
+jobid: 51
+jobname: 美术实习
+salary: 2k-5k
+address: 北京
+experience: 经验1年以下
+edureq: 硕士及以上
+
+jobid: 54
+jobname: 游戏客服
+salary: 2k-5k
+address: 北京
+experience: 经验不限
+edureq: 学历不限
+
+jobid: 55
+jobname: C++实习生
+salary: 2k-5k
+address: 北京
+experience: 经验应届毕业生
+edureq: 本科及以上
+
+jobid: 53
+jobname: C++手机开发
+salary: 5k-10k
+address: 北京
+experience: 经验不限
+edureq: 本科及以上
+
+jobid: 61
+jobname: .net高级软件开发工程师
+salary: 2k-20k
+address: 上海
+experience: 经验不限
+edureq: 本科及以上
+
+jobid: 79
+jobname: android开发
+salary: 8k-15k
+address: 上海
+experience: 经验1-3年
+edureq: 本科及以上
+
+jobid: 89
+jobname: 运维工程师
+salary: 2k-20k
+address: 上海
+experience: 经验不限
+edureq: 本科及以上
+
+jobid: 90
+jobname: 技术开发高级工程师
+salary: 15k-20k
+address: 上海
+experience: 经验5-10年
+edureq: 本科及以上
+
+jobid: 81
+jobname: 项目经理（行业分析）
+salary: 2k-20k
+address: 上海
+experience: 经验不限
+edureq: 本科及以上
+
+jobid: 92
+jobname: 总务员兼会计
+salary: 3k-4k
+address: 上海
+experience: 经验1-3年
+edureq: 大专及以上
+
+jobid: 96
+jobname: PHP工程师
+salary: 8k-15k
+address: 北京
+experience: 经验1-3年
+edureq: 学历不限
+
+jobid: 109
+jobname: 销售经理
+salary: 2k-20k
+address: 上海
+experience: 经验1-3年
+edureq: 大专及以上
+
+jobid: 91
+jobname: 技术开发工程师
+salary: 8k-12k
+address: 上海
+experience: 经验1-3年
+edureq: 本科及以上
+
+jobid: 94
+jobname: JAVA工程师
+salary: 10k-15k
+address: 北京
+experience: 经验3-5年
+edureq: 本科及以上
+
+jobid: 100
+jobname: 前端开发工程师
+salary: 2k-20k
+address: 北京
+experience: 经验不限
+edureq: 本科及以上
+
+jobid: 87
+jobname: 商务专员
+salary: 2k-20k
+address: 上海
+experience: 经验1-3年
+edureq: 大专及以上
+
+jobid: 99
+jobname: JAVA研发工程师
+salary: 8k-15k
+address: 北京
+experience: 经验1-3年
+edureq: 本科及以上
+
+jobid: 97
+jobname: UI设计人员
+salary: 5k-10k
+address: 上海
+experience: 经验1-3年
+edureq: 大专及以上
+
+jobid: 103
+jobname: 微博运营人员
+salary: 2k-20k
+address: 北京
+experience: 经验不限
+edureq: 本科及以上
+
+jobid: 105
+jobname: 运营助理
+salary: 2k-20k
+address: 上海
+experience: 经验1-3年
+edureq: 大专及以上
+
+jobid: 95
+jobname: PHP工程师
+salary: 8k-15k
+address: 北京
+experience: 经验1-3年
+edureq: 学历不限
+
+jobid: 102
+jobname: 销售经理
+salary: 2k-20k
+address: 上海
+experience: 经验1-3年
+edureq: 大专及以上
+
+jobid: 107
+jobname: 营销策划人员
+salary: 2k-20k
+address: 北京
+experience: 经验不限
+edureq: 学历不限
+
+jobid: 101
+jobname: 销售经理
+salary: 2k-20k
+address: 北京
+experience: 经验3-5年
+edureq: 本科及以上
+
+jobid: 118
+jobname: 产品经理
+salary: 12k-20k
+address: 北京
+experience: 经验3-5年
+edureq: 学历不限
+
+jobid: 132
+jobname: 系统工程师
+salary: 15k-20k
+address: 北京
+experience: 经验1-3年
+edureq: 本科及以上
+
+jobid: 98
+jobname: iphone开发人员
+salary: 8k-15k
+address: 上海
+experience: 经验1-3年
+edureq: 大专及以上
+
+jobid: 106
+jobname: 区域总监
+salary: 2k-20k
+address: 上海
+experience: 经验5-10年
+edureq: 本科及以上
+
+jobid: 119
+jobname: 美术设计
+salary: 2k-5k
+address: 北京
+experience: 经验1年以下
+edureq: 大专及以上
+
+jobid: 88
+jobname: 网站产品助理
+salary: 2k-20k
+address: 上海
+experience: 经验不限
+edureq: 学历不限
+
+jobid: 108
+jobname: 销售总监
+salary: 2k-20k
+address: 上海
+experience: 经验3-5年
+edureq: 本科及以上
+
+jobid: 115
+jobname: 时尚编辑
+salary: 5k-8k
+address: 北京
+experience: 经验1-3年
+edureq: 学历不限
+
+jobid: 131
+jobname: 数据分析师
+salary: 8k-11k
+address: 北京
+experience: 经验不限
+edureq: 学历不限
+
+jobid: 117
+jobname: 微博运营专员
+salary: 2k-5k
+address: 北京
+experience: 经验1年以下
+edureq: 本科及以上
+
+jobid: 143
+jobname: 网页设计师
+salary: 2k-20k
+address: 北京
+experience: 经验不限
+edureq: 本科及以上
+
+jobid: 136
+jobname: 网站编辑
+salary: 5k以上
+address: 北京
+experience: 经验1-3年
+edureq: 学历不限
+
+jobid: 128
+jobname: 人脸/人体识别算法工程师
+salary: 10k以上
+address: 北京
+experience: 经验不限
+edureq: 硕士及以上
+
